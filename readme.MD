@@ -10,7 +10,7 @@ this library provides backed for "Connect 4 in one line" (written in node expres
 
 ## Api Detail
 
-### start game POST http://<domain>/game/start
+### start game POST http:\/\/<domain>\/game\/start
 #### request body : empty
 #### response :
 ```json
@@ -20,7 +20,7 @@ this library provides backed for "Connect 4 in one line" (written in node expres
     "success": true
 }
 ```
-### start game GET http://<domain>/game/<userId>/game
+### start game GET http:\/\/<domain>\/game\/<userId>\/game
 #### response :
 ```json
 {
@@ -44,7 +44,7 @@ this library provides backed for "Connect 4 in one line" (written in node expres
 ##### activePlayer : tells about whose chance it is to play
 ##### playerWon : tells about which player won the game (empty mean not has won yet)
 
-### start game POST http://<domain>/game/<userId>/reset
+### start game POST http:\/\/<domain>\/game\/<userId>\/reset
 #### request body : empty
 #### response :
 ```json
@@ -66,7 +66,7 @@ this library provides backed for "Connect 4 in one line" (written in node expres
 }
 ```
 
-### start game POST http://<domain>/game/<userId>/add
+### start game POST http:\/\/<domain>\/game\/<userId>\/add
 #### request body :
 ```json
 {
