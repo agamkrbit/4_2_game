@@ -64,4 +64,11 @@ gameHanlder.post('/:userId/add', (req, res) => {
     }
 })
 
+//flush all (this api for internal use not for production)
+gameHanlder.post('/flush', (req, res) => {
+    gameMap = new Map();
+    gameMap.set(2, new GameEngine());
+    res.send(responseBuilder(null, "successfull", true));
+})
+
 module.exports = gameHanlder;
